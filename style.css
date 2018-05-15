@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+    max-height: 100vh;
+    max-width: 100vw;
+}
+#wrapper {
+    padding: 20px 15vw;
+    height: 100vh;
+    width: 90vw;
+    box-sizing: border-box;
+    margin: 0 auto;   
+}
+
+.arrows {
+    display: block;
+    position: absolute;
+    opacity: 0.7;
+}
+
+h2,
+p {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.text {
+    min-width:  145px;
+    margin: 0 auto;
+}
+
+#left {
+    top: 160px;
+    left: 5px;
+    height: 85px;
+    width: 85px;
+    cursor: pointer;
+    background: url(img/hand-pointer1-left.png);
+}
+
+#right {
+    top: 160px;
+    right: 5px;
+    height: 85px;
+    width: 85px;
+    cursor: pointer;
+    background: url(img/hand-pointer1-right.png);
+}
+
+#btnPlay,
+#btnPause {
+    position: absolute;
+    top: 375px;
+    left: 10px;
+    width: 55px;
+    cursor: pointer;
+}
+
+#radio {
+    position: absolute;
+    top: 3%;
+    width: 52.5vw;
+    opacity: 0.7;
+    margin: 0 0 0 0.8%;
+    box-sizing: border-box;
+}
+
+#rbForm {
+    width: 100px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+#rbForm input {
+    cursor: pointer;
+    margin: 0px 3px;
+}
+
+.block {
+    width: 53vw;
+    display: none;
+    padding: 15px 155px;
+    position: absolute;
+    top: 10vh;
+    box-sizing: border-box;
+}
+
+.block img {
+    display: block;
+    max-height: 100px;
+    max-width: 100px;
+    margin: 0px auto 55px;
+}
+
+.radio {
+    display: none;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #505050;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 3px 3px 3px 1px #00000075;
+}
+
+.radio-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: black;
+    border-radius: 2px;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+    border-radius: 50%;
+}
